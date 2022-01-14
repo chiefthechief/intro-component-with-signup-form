@@ -49,8 +49,6 @@ main{
     width: 100%;
     margin-bottom: 1rem;
     color: black;
-    /*background: url('./images/icon-error.svg') top right 7% no-repeat;
-    background-position-y: 50%;*/
     padding: .7rem;
     border: 1px solid hsl(0, 1%, 52%);
     border-radius: .3rem;
