@@ -7,7 +7,7 @@
     color: white;
 }
 body{
-    background: url('./images/bg-intro-mobile.png') center center no-repeat, linear-gradient(to bottom, hsl(0, 100%, 74%), hsl(0, 100%, 74%))
+    background: url('./images/bg-intro-mobile.png') center center no-repeat, linear-gradient(to bottom, hsl(0, 100%, 74%), hsl(0, 100%, 74%));
 }
 a{
     text-decoration: none;
@@ -48,24 +48,37 @@ main{
 #main-right #section form input{
     width: 100%;
     margin-bottom: 1rem;
+    color: black;
+    /*background: url('./images/icon-error.svg') top right 7% no-repeat;
+    background-position-y: 50%;*/
     padding: .7rem;
     border: 1px solid hsl(0, 1%, 52%);
     border-radius: .3rem;
 }
 #main-right #section form p.none{
-    background: url('./images/icon-error.svg') right no-repeat;
-    color: black;
+    color: hsl(0, 100%, 74%);
     font-size: .8rem;
     font-style: italic;
     text-align: end;
-    margin-top: -1.3rem;
+    margin-top: -.7rem;
+    margin-bottom: -1rem;
+    margin-right: 1rem;
+    display: none;
+}
+#main-right #section form p.none.show{
+    display: block;
 }
 #main-right #section form input:focus{
-    border:2px solid hsl(248, 32%, 49%);
+    border:1px solid hsl(248, 32%, 49%);
 }
-#main-right #section form input[type = submit]{
+#main-right #section form button[type = submit]{
+    width: 100%;
+    padding: .7rem;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
     background: hsl(154, 59%, 51%);
     border: 1px solid hsl(154, 59%, 51%);
+    box-shadow: 0px 5px 0px 0px hsla(154, 78%, 27%, 0.831);
 }
 #main-right #section p:last-child{
     color: hsl(0, 2%, 37%);
@@ -84,4 +97,22 @@ main{
 }
 #outside-main a{
     text-decoration: underline;
+}
+@media all and (min-width: 1100px){
+    main{
+        width: 100%;
+        max-width: 1100px;
+        margin: 6rem auto;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #main-left{
+        width: 40%;
+    }
+    #main-right{
+        width: 52%;
+    }
 }
