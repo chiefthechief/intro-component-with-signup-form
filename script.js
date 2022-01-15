@@ -25,7 +25,7 @@ function validateInput(){
         lastName.nextElementSibling.classList.add('show');
         return false;
     }
-    else if(!(emailAddress.value.match(validRegex))){
+    else if(!(emailAddressvalue.match(validRegex))){
         emailAddress.style.background = "url('./images/icon-error.svg') top right 7% no-repeat";
         emailAddress.style.backgroundPositionY = "50%";
         emailAddress.nextElementSibling.classList.add('show');
