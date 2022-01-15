@@ -69,7 +69,7 @@ main{
 #main-right #section form input:focus{
     border:1px solid hsl(248, 32%, 49%);
 }
-#main-right #section form button[type = submit]{
+#main-right #section form input[type = submit]{
     width: 100%;
     padding: .7rem;
     border-radius: .3rem;
@@ -77,6 +77,7 @@ main{
     background: hsl(154, 59%, 51%);
     border: 1px solid hsl(154, 59%, 51%);
     box-shadow: 0px 5px 0px 0px hsla(154, 78%, 27%, 0.831);
+    color: white;
 }
 #main-right #section p:last-child{
     color: hsl(0, 2%, 37%);
